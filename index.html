@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
-  <title>HAFIZ SULTAN TRADER™</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- ============================================================
+    ✏️  CUSTOMIZATION SECTION — CHANGE ONLY THESE VALUES
+    ============================================================
+    CLIENT_NAME        → Full name shown on page
+    CLIENT_TAGLINE     → Short line below the name
+    CLIENT_TOPICS      → E.g. #Nifty #BankNifty #Stocks
+    CLIENT_BULLETS     → What they will learn (3 lines)
+    TELEGRAM_LINK      → The t.me invite link
+    TC_LINK            → Terms & Conditions page URL
+    PP_LINK            → Privacy Policy page URL
+    PIXEL_ID           → Meta Pixel ID
+    AGENCY_NAME        → Your ad agency name
+    AGENCY_LINK        → Your agency Telegram link
+    AGENCY_HANDLE      → Your agency Telegram handle
+    ============================================================ -->
+
+  <title>PANKAJ BHARDWAJ</title>
+
+  <!-- ✏️ Replace PIXEL_ID with actual Meta Pixel ID -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -14,31 +33,34 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '955993470627342');
+    fbq('init', '1000549692656056');
     fbq('track', 'PageView');
   </script>
   <noscript>
-    <img height="1" width="1" style="display:none" 
-         src="https://www.facebook.com/tr?id=1440528827721506&ev=PageView&noscript=1" />
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1"/>
   </noscript>
 
   <style>
+    /* ── Reset ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
       background: linear-gradient(135deg, #000428, #004e92);
       color: white;
       text-align: center;
-      padding: 40px 15px;
+      padding: 40px 15px 20px;
+      min-height: 100vh;
     }
 
     .container {
       max-width: 420px;
-      margin: auto;
+      margin: 0 auto;
       animation: fadeIn 1.2s ease;
     }
 
-    /* 🔥 PROFILE IMAGE WITH GRADIENT RING */
+    /* ── Profile ring ── */
     .image-wrapper {
       display: inline-block;
       padding: 5px;
@@ -57,29 +79,19 @@
       display: block;
     }
 
-    /* ✅ VERIFIED BADGE */
-    .verified {
-      color: #1DA1F2;
-      font-size: 20px;
-      margin-left: 6px;
-    }
-
+    /* ── Typography ── */
     h1 {
-      font-size: 30px;
+      font-size: 28px;
+      margin-top: 8px;
       margin-bottom: 8px;
+      line-height: 1.3;
     }
 
     h2 {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: normal;
       margin-bottom: 20px;
       opacity: 0.9;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 1.6;
-      margin-bottom: 15px;
     }
 
     .highlight {
@@ -87,118 +99,158 @@
       font-weight: bold;
     }
 
-    /* 🔥 PULSING BUTTON */
+    /* ── Description ── */
+    .desc {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 10px;
+      opacity: 0.95;
+    }
+
+    /* ── Educational disclaimer (IMPORTANT for Meta) ── */
+    .edu-disclaimer {
+      font-size: 12px;
+      color: #a8c8ff;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(168,200,255,0.3);
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin: 14px 0 20px;
+      line-height: 1.5;
+    }
+
+    /* ── CTA Button ── */
     .btn {
       background: #1877f2;
       color: white;
       padding: 16px 32px;
       font-size: 18px;
+      font-weight: bold;
       border-radius: 12px;
       display: inline-block;
       text-decoration: none;
-      margin-top: 25px;
+      margin-top: 10px;
+      margin-top: 8px;
       animation: pulse 1.5s infinite;
       box-shadow: 0 0 0 rgba(24,119,242,0.6);
+      transition: transform 0.1s ease;
     }
 
-    .urgency {
-      margin-top: 18px;
-      font-size: 15px;
-      color: #ffcc00;
-      font-weight: bold;
+    .btn:active { transform: scale(0.97); }
+
+    /* ── Legal line below button ── */
+    .legal-line {
+      font-size: 11px;
+      color: rgba(255,255,255,0.45);
+      margin-top: 10px;
+      line-height: 1.6;
     }
 
+    .legal-line a {
+      color: rgba(255,255,255,0.55);
+      text-decoration: underline;
+    }
+
+    .legal-line a:hover { color: white; }
+
+    /* ── Trust badges ── */
     .trust {
       font-size: 14px;
       opacity: 0.85;
-      margin-top: 25px;
+      margin-top: 28px;
+      line-height: 2;
     }
 
+    /* ── Agency footer ── */
+    .agency {
+      margin-top: 28px;
+      font-size: 12px;
+      opacity: 0.7;
+    }
+
+    .agency a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+
+    .agency a:hover { text-decoration: underline; }
+
+    /* ── Page footer ── */
+    .page-footer {
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 11px;
+      color: rgba(255,255,255,0.4);
+    }
+
+    .page-footer a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      margin: 0 6px;
+    }
+
+    .page-footer a:hover { color: white; }
+
+    /* ── Animations ── */
     @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(24,119,242,0.7); }
-      70% { box-shadow: 0 0 0 18px rgba(24,119,242,0); }
+      0%   { box-shadow: 0 0 0 0 rgba(24,119,242,0.7); }
+      70%  { box-shadow: 0 0 0 18px rgba(24,119,242,0); }
       100% { box-shadow: 0 0 0 0 rgba(24,119,242,0); }
     }
 
     @keyframes glowPulse {
-      0% { box-shadow: 0 0 10px #ffd700; }
-      50% { box-shadow: 0 0 25px #ff6a00; }
+      0%   { box-shadow: 0 0 10px #ffd700; }
+      50%  { box-shadow: 0 0 25px #ff6a00; }
       100% { box-shadow: 0 0 10px #ffd700; }
     }
 
     @keyframes gradientMove {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
 
     @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 
 <body>
-
   <div class="container">
 
+    <!-- ✏️ Replace profile.jpg with client's actual image -->
     <div class="image-wrapper">
-      <img src="profile.jpeg" alt="Mehta Profile Picture" class="profile-img">
+      <img src="pankaj.webp" alt="Profile" class="profile-img">
     </div>
+    
+    <!-- ✏️ CLIENT_NAME -->
+    <h1>PANKAJ BHARDWAJ</h1>
 
-    <h1>
-      HAFIZ SULTAN TRADER™
-      <span class="verified">✔</span>
-    </h1>
-
+    <!-- ✏️ CLIENT_TOPICS -->
     <h2>
-      کے لیے ہندوستان کا بہترین چینل 
-      
+      Learn Stock Market Basics <br>
       <span class="highlight">#Nifty #BankNifty #Stocks</span>
     </h2>
 
-    <p>
-      📈 اپنے تجارتی نقصانات کی بازیافت کریں۔ <br>
-      💰 Earn <strong>₹3K – ₹10K Daily</strong> <br><br>
-      🇮🇳 ہزاروں ہندوستانی تاجروں کا بھروسہ
-      💰 100% حلال کام
+    <!-- ✏️ CLIENT_BULLETS (what they learn) -->
+    <p class="desc">
+      📊 Technical Analysis Basics<br>
+      📈 How to Read Charts & Trends<br>
+      🧠 Build Your Market Analytical Skills
     </p>
 
-    <a href="https://t.me/+FRweVhGe0101MjBl"
+    <!-- ✏️ TELEGRAM_LINK -->
+    <a href="https://t.me/+TZSe9GqaCBQ4ZmJl"
        target="_blank"
-       rel="noopener noreferrer"
+       rel="noopener"
        class="btn"
        onclick="fbq('track','Lead')">
-       👉 Join Our Telegram Channel
+      👉 Join Free on Telegram
     </a>
 
-    <div class="urgency">
-      ⏳ محدود مفت رسائی - مارکیٹ کھلنے سے پہلے شامل ہوں۔
-    </div>
-
-    <div class="trust">
-      ✅ Free Calls <br>
-      ✅ Live Market Updates <br>
-      ✅ Beginner Friendly <br>
-      🔒 No Spam • 100% Transparency
-    </div>
-
-  </div> <div style="margin-top:20px; font-size:13px; opacity:0.8;">
-    🚀 Ads by Ajay Marketing Agency 
-    <a href="https://t.me/+tFb1G2lVALgyYzY1"
-       target="_blank"
-       rel="noopener noreferrer"
-       style="color:#ffd700; text-decoration:none;">
-       Contact @Ajay_Ads
-    </a>
   </div>
-
 </body>
 </html>
